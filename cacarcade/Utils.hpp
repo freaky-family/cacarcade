@@ -1,6 +1,8 @@
 #pragma once
 
+#include <string_view>
+
 namespace cacarcade {
-    #define GAME_ENTRYPOINT "gameEntrypoint"
-    #define DISPLAY_ENTRYPOINT "displayEntrypoint"
+    constexpr std::string_view gameEntrypoint("gameEntrypoint");
+    constexpr std::string_view displayEntrypoint("displayEntrypoint");
 }
