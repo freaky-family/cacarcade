@@ -10,7 +10,7 @@ namespace cacarcade {
         public:
             virtual ~IGameModule() = default;
 
-            virtual void update(std::unique_ptr<std::optional<cacarcade::IEvent>> &event) = 0;
+            virtual void update(std::optional<std::unique_ptr<cacarcade::IEvent>> &event) = 0;
             virtual cacarcade::TileContainer getTiles() const = 0;
     };
 }
