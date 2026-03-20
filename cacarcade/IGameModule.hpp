@@ -2,13 +2,15 @@
 
 #include "IEvent.hpp"
 #include "TileContainer.hpp"
+#include <memory>
+#include <optional>
 
 namespace cacarcade {
     class IGameModule {
         public:
             virtual ~IGameModule() = default;
 
-            virtual void update(cacarcade::IEvent &event) = 0;
+            virtual void update(std::unique_ptr<std::optional<cacarcade::IEvent>> &event) = 0;
             virtual cacarcade::TileContainer getTiles() const = 0;
     };
 }
