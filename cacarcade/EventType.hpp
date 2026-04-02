@@ -16,7 +16,8 @@ namespace cacarcade {
 
         // Menu specific Events
         LaunchGame,
-
+        LaunchDisplay,
+    
         Reset,
         Quit,
         Menu
