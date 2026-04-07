@@ -17,6 +17,6 @@ namespace cacarcade {
             virtual cacarcade::TileContainer getTiles() const = 0;
 
             // Set the player name for score handling
-            virtual void setPlayerName() = 0;
+            virtual void setPlayerName(std::string) = 0;
     };
 }
