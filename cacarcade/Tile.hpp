@@ -9,6 +9,12 @@ namespace cacarcade {
         std::size_t x;
         std::size_t y;
 
+        enum orientation {
+            Up,
+            Down,
+            Left,
+            Right
+        } orientation;
         std::string textureName;
 
         cacarcade::ColorCode backgroundColor;
