@@ -9,7 +9,7 @@ namespace cacarcade {
         std::size_t x;
         std::size_t y;
 
-        enum orientation {
+        enum class Orientation {
             Right,
             Up,
             Left,
