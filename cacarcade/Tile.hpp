@@ -14,7 +14,7 @@ namespace cacarcade {
             Down,
             Left,
             Right
-        } orientation;
+        } textureOrientation;
         std::string textureName;
 
         cacarcade::ColorCode backgroundColor;
